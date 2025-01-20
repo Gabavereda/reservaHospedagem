@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Atividade 5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='atv5.css'>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!--JQUERYVALIDATE-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+    <script src='formulario.js'></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div id="HeaderLogo" class="col-12">
+                <img src="logo1.webp" alt="" class="img-fluid" id="logoHeader">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="cardComBtn" class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h2 class="card-title">Sinta o conforto acolhedor de nossas hospedagens</h2>
+                        <p class="card-subtitle mb-2 text-body-secondary ">
+                            Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00
+                        </p>
+                        <div class="btn">
+                            <button type="button" class="btn btn-primary btn-lg">Saiba Mais!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <img id="fotoHeader" class="img-fluid" src="fotoHotel.webp" alt="fotoHotel">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="middleBody" class="container text-start">
+        <h1 class="titulo-text-center">Por que se hospedar em nosso Hotéis???</h1>
+
+
+        <div class="row">
+            <div class="logo col-md-1">
+                <img class="fotoCafe" src="cup-hot-fill.svg" alt="cafe" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <h3 class="card-title">
+                    Delicioso café da manhã!
+                </h3>
+                <p class="card-subtitle" id="descricoesDestaque">Incluso em todas as diárias!</p>
+            </div>
+
+            <div id="logo" class="col-md-1">
+                <img class="fotoCafe" src="geo-alt-fill.svg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <h3 class="card-title">
+                    Fácil Acesso!
+                </h3>
+                <p class="card-subtitle" id="descricoesDestaque">Perto dos principais pontos turísticos!</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container text-center shadow-lg" id="secaoQuartos">
+        <h1>Nossos quartos</h1>
+        <div id="FotosEstiloGap" class="row justify-content-center">
+            <div class="col-12 col-md-4">
+                <img id="fotoQuarto" src="quartoSolteiro.jpg" alt="" class="img-fluid">
+                <p id="descricoesDestaque">Suíte Solteiro</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img id="fotoQuarto" src="quartoCasal.jpg" alt="" class="img-fluid">
+                <p id="descricoesDestaque">Suíte Casal</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img id="fotoQuarto" src="quartoMaster.jpg" alt="" class="img-fluid">
+                <p id="descricoesDestaque">Suíte Master</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="formsFinal" class="container-fluid">
+        <div class="row">
+            <div id="reserva" class="col-md-4 d-flex flex-column justify-content-center">
+                <h2 class="card-title">Faça sua Reserva!</h2>
+                <p class="card-subtitle" id="descricoesDestaque">
+                    Entre em Contato Conosco Informando as datas Desejadas, lhe retornaremos informando a
+                    disponibilidade e repassando detalhes da Reserva.
+                </p>
+            </div>
+
+            <div class="col-md-8" style="background-color: green;">
+                <form id="formulario">
+                    <div class="row g-3">
+                        <!-- Nome e Email -->
+                        <div class="col-md-6">
+                            <input id="nome" name="nome" type="text" class="form-control" placeholder="Nome"
+                                aria-label="Nome">
+                        </div>
+                        <div class="col-md-6">
+                            <input id="email" name="email" type="email" class="form-control" placeholder="Email"
+                                aria-label="Email">
+                        </div>
+
+                        <!-- Data de Entrada e Saída -->
+                        <div class="col-md-6">
+                            <input id="dataEntrada" name="dataEntrada" type="date" class="form-control"
+                                aria-label="Data de Entrada">
+                        </div>
+                        <div class="col-md-6">
+                            <input id="dataSaida" name="dataSaida" type="date" class="form-control"
+                                aria-label="Data de Saída">
+                        </div>
+
+                        <!-- Observações, Adultos e Crianças -->
+                        <div class="col-md-2">
+                            <input id="qntAdult" name="qntdAdult" type="number" class="form-control"
+                                placeholder="Adultos" aria-label="Adultos">
+                        </div>
+                        <div class="col-md-2">
+                            <input id="qntCriancas" name="qntCriancas" type="number" class="form-control"
+                                placeholder="Crianças" aria-label="Crianças">
+                        </div>
+                        <div class="form-floating">
+                            <textarea id="observacoes" name="observacoes" class="form-control"></textarea>
+                            <label for="observacoes">Observações</label>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-4 col-4 mx-auto" id="divBtn">
+                        <button class="btn btn-primary btn-lg" type="submit" id="btnForm">Enviar!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
