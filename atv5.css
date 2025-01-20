@@ -1,0 +1,111 @@
+#HeaderLogo {
+    background-color: yellow;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Circular Elegance;
+}
+
+#logoHeader {
+    height: 100px;
+    float: left;
+    padding: 0.2em;
+    margin-left: 1em;
+}
+
+#cardComBtn {
+    margin-top: 5em;
+}
+
+#descricoesDestaque {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.titulo-text-center {
+    text-align: center;
+    margin-top: 1em;
+    font-style: oblique;
+}
+
+.fotoCafe {
+    height: 40px;
+}
+
+#middleBody {
+    margin-top: 3em;
+}
+
+#secaoQuartos {
+    margin-top: 2em;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#FotosEstiloGap {
+    margin: 0 auto;
+}
+
+#fotoQuarto {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#FotosEstiloGap .col-md-4 {
+    display: block;
+    text-align: center;
+    padding: 1em;
+}
+
+#formsFinal {
+    margin-top: 2em;
+    background-color: yellow;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#formulario {
+    margin-top: 2em;
+}
+
+#floatingTextarea2 {
+    height: fit-content;
+}
+
+#reserva {
+    margin-bottom: 9em;
+}
+
+#divBtn {
+    padding: 0.5em;
+}
+
+/* Mensagem de erro na validacao js*/
+.error {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: underline;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+    font-size: 17px;
+    margin-top: 3px;
+}
+
+#tabelaMontada{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+#tituloTable{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    text-align: left;
+
+}
